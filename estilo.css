@@ -4,8 +4,9 @@
     box-sizing: content-box;
 }
 body { 
-      background: linear-gradient(#9d9dd3,rgb(238, 195, 195));
-      margin: 50px;
+      background: linear-gradient(to left, #e1e1e7,rgb(238, 222, 222));
+      margin: 10px;
+      min-height: 100vh;
 }
 h1 {
     text-align: center;
@@ -59,4 +60,68 @@ input[type="text"], input[type="email"]{
         border: 3px solid;
         text-align: left;
         padding: 8px;
-        }   
+        }
+        .header{
+            background: yellow;
+            text-align: center;
+            border-radius: 10px;
+            padding: 1rem;
+            grid-area: "encabezado";
+        }
+        .nav{
+            background: rgb(173, 181, 228);
+            text-align: center;
+            border-radius: 10px;
+            padding: 1rem;
+            grid-area: "menu";  
+        }
+        .main{
+            background: pink;
+            text-align: center;
+            border-radius: 10px;
+            padding: 1rem;
+            grid-area: "contenido";
+        }
+        .aside{
+            background:gray;
+            text-align: center;
+            border-radius: 10px;
+            padding: 1rem;
+            grid-area: "submenu";
+        }
+        .footer{
+            background:rgb(107, 207, 107);
+            text-align: center;
+            border-radius: 10px;
+            padding: 1rem;
+            grid-area: "pie";
+        }
+/*CSS GRIP*/
+.page{
+    display: grid ;
+    gap: 2px;
+    grid-template: 
+    "encabezado" 100px
+    "menu" 50px
+    "contenido" auto
+    "submenu" 100px
+    "pie" 50px;
+    @media (min-width:768px){
+        grid-template: 
+        "encabezado encabezado encabezado"100px
+        "menu menu menu" 50px
+        "contenido contenido"
+        "submenu" auto
+        "pie pie pie" 50px / auto auto 40px;
+        }
+        @media (min-width: 1024px){
+            grid-template:
+            "encabezado encabezado encabezado encabezado encabezado" 100px
+            "menu contenido contenido contenido submenu" auto
+            "pie pie pie pie pie"50px
+            /20% auto auto auto 20%;
+        }
+
+}
+        
+
