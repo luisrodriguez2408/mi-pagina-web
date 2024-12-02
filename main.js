@@ -1,1 +1,1 @@
-console.log("Estoy en JS")
+console.log("Estoy en js")

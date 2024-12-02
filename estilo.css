@@ -24,7 +24,7 @@ h1 {
     h3 {
         color: rgb(85, 83, 83);
     }
-input[type="text"], input[type="email"]{
+input[type="text"], input[type="email"], input[type="number"] {
     min-width: 100%;
     min-height: 30px;
     margin-bottom: 5px;
@@ -32,7 +32,7 @@ input[type="text"], input[type="email"]{
     border: 2px greenyellow solid;
     text-shadow: 5px 5px 10px #555;
     }
-    input[type="text"]:hover, input[type="email"]:hover{
+    input[type="text"]:hover, input[type="email"],input[type="number"]:hover{
         border: 2px rgb(123, 123, 189)solid;
         box-shadow: 5px 5px 10px #555;
     }
